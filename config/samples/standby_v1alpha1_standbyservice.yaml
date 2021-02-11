@@ -1,0 +1,9 @@
+apiVersion: standby.custom.com/v1alpha1
+kind: StandbyService
+metadata:
+  name: standbyservice-sample
+spec:
+  ServiceName: example-service
+  ProdLabel: example-prod
+  StandbyLabel: example-standby
+  active: false

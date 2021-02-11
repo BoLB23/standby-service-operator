@@ -1,0 +1,20 @@
+# permissions for end users to view standbyservices.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: standbyservice-viewer-role
+rules:
+- apiGroups:
+  - standby.custom.com
+  resources:
+  - standbyservices
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - standby.custom.com
+  resources:
+  - standbyservices/status
+  verbs:
+  - get

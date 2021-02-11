@@ -1,0 +1,4 @@
+## Append samples you want in your CSV to this file as resources ##
+resources:
+- standby_v1alpha1_standbyservice.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples
